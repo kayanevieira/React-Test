@@ -1,15 +1,13 @@
-import react from "react";
+import react, {useState} from "react";
 import styles from "./Styles.module.scss";
 
-type Props = {
-  value?: string | number | readonly string[] | undefined;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-}
 
 export const SearchInput = () => {
+  const [text, setText] = useState('');
+  console.log(text);
   return (
     <div className={styles.searchInput}>
-    <input className={styles.input} type="text"  />
+    <input className={styles.input} type="text" value={text} onChange={(e) => setText(e.target.value)}/>
     </div>
   );
 };
