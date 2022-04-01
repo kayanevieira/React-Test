@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+.searchInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input{
+    width: 150px;
+    height: 20px;
+    background-color: #f2f2f2;
+    padding: 3px;
+    border: 0 none;
+    outline: 0;
+    color: #333;
+    margin-top: 19px;
+    border-radius: 5px;
+}
